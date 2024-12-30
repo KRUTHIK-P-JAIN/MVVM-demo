@@ -1,4 +1,4 @@
 <resources>
-    <string name="app_name">MVVM with Room Database</string>
+    <string name="app_name">MVVM with Room Database and Retrofit</string>
     <string name="insertquote">InsertQuote</string>
 </resources>
