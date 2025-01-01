@@ -8,7 +8,7 @@ import com.example.mvvmdemo.model.QuotesRepository
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
 
-class QuotesViewModel(private val quotesRepository: QuotesRepository): ViewModel() {
+class QuotesViewModel(private val quotesRepository: QuotesRepository) : ViewModel() {
 
     init {
         viewModelScope.launch(Dispatchers.IO) {

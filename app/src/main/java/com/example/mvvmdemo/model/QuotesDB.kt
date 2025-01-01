@@ -6,12 +6,12 @@ import androidx.room.Room
 import androidx.room.RoomDatabase
 
 @Database(entities = [Result::class], version = 1)
-abstract class QuotesDB : RoomDatabase(){
+abstract class QuotesDB : RoomDatabase() {
     //mention all dao(s)
     abstract fun quotesDao(): QuotesDao
 
-    companion object{
-        private var INSTANCE : QuotesDB? = null
+    companion object {
+        private var INSTANCE: QuotesDB? = null
 
         //migrated from version 1 to 2
 //        private val MIGRATION_1_2 = object : Migration(1, 2) {

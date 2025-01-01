@@ -9,7 +9,8 @@ import com.example.mvvmdemo.model.QuotesRepository
  * you need a factory to properly instantiate it. Without a factory,
  * the default ViewModelProvider won't know how to create your ViewModel.
  */
-class QuotesViewModelFactory(private val quotesRepository: QuotesRepository): ViewModelProvider.Factory {
+class QuotesViewModelFactory(private val quotesRepository: QuotesRepository) :
+    ViewModelProvider.Factory {
     override fun <T : ViewModel> create(modelClass: Class<T>): T {
         return QuotesViewModel(quotesRepository) as T
     }
